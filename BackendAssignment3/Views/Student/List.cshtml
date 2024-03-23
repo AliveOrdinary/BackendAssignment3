@@ -1,0 +1,15 @@
+﻿@model IEnumerable<BackendAssignment3.Models.Student>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List of Students</h2>
+
+<p>This is the list of students</p>
+
+@foreach (var student in Model)
+            {
+    <div>
+        <a class="main-list" href="/Student/Show/@student.StudentId" >@student.StudentFname @student.StudentLname</a>
+    </div>
+            }

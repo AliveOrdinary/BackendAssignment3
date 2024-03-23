@@ -1,0 +1,16 @@
+﻿@model BackendAssignment3.Models.Student
+@{
+    ViewBag.Title = "Show";
+}
+
+<h2>Student Information</h2>
+
+<p>This is the Information of a individual student</p>
+
+<a href="/Student/List">Back to Students list</a>
+<div>
+    <p>Student ID: @Model.StudentId</p>
+    <h3>Name: @Model.StudentFname @Model.StudentLname</h3>
+    <p>Student Number: @Model.StudentNumber</p>
+    <p>Enroll Date: @Model.EnrollDate </p>
+</div>

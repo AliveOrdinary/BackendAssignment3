@@ -1,0 +1,15 @@
+﻿@model IEnumerable<BackendAssignment3.Models.Class>
+@{
+    ViewBag.Title = "List";
+}
+
+<h2>List of Classes</h2>
+
+<p>This is the list of Classes</p>
+
+@foreach (var item in Model)
+{
+    <div>
+        <a class="main-list" href="/Class/Show/@item.ClassId">@item.ClassCode @item.ClassName</a>
+    </div>
+}
